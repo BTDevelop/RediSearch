@@ -16,7 +16,7 @@ RUN set -ex;\
     make test;
 
 # Package the runner
-FROM redis:latest
+FROM redis:8.4.0-bookworm
 ENV LIBDIR /usr/lib/redis/modules
 WORKDIR /data
 RUN set -ex;\
